@@ -1,6 +1,6 @@
 # useBatchedRingBuffer
 
-[![CI](https://github.com/shreyasheoran/use-batched-ring-buffer/actions/workflows/ci.yml/badge.svg)](https://github.com/shreyasheoran/use-batched-ring-buffer/actions/workflows/ci.yml) ![React 18 | 19](https://img.shields.io/badge/React-18%20%7C%2019-0F1B33) ![gzip ~1 KB](https://img.shields.io/badge/gzip-~1%20KB-0F1B33) ![license MIT](https://img.shields.io/badge/license-MIT-0F1B33)
+[![CI](https://github.com/shreyasheoran/use-batched-ring-buffer/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/shreyasheoran/use-batched-ring-buffer/actions/workflows/ci.yml) ![React 18 | 19](https://img.shields.io/badge/React-18%20%7C%2019-0F1B33) ![gzip ~1 KB](https://img.shields.io/badge/gzip-~1%20KB-0F1B33) ![license MIT](https://img.shields.io/badge/license-MIT-0F1B33)
 
 A small React 18+ hook for UIs that receive a firehose of events: WebSocket alerts, logs, price ticks.
 
