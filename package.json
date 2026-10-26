@@ -1,0 +1,44 @@
+{
+  "name": "use-batched-ring-buffer",
+  "version": "1.0.0",
+  "description": "A React 18+ hook that buffers high-rate event streams in a ring buffer and re-renders at most once per flush window.",
+  "license": "MIT",
+  "author": "Shreya Sheoran",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./src/index.ts",
+  "files": ["src"],
+  "keywords": ["react", "hook", "ring-buffer", "websocket", "real-time", "virtualization", "performance"],
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage",
+    "memcheck": "esbuild scripts/memcheck.ts --bundle --platform=node --outfile=.tmp/memcheck.cjs --log-level=warning && node --expose-gc .tmp/memcheck.cjs",
+    "microbench": "esbuild scripts/microbench.ts --bundle --platform=node --outfile=.tmp/microbench.cjs --log-level=warning && node .tmp/microbench.cjs",
+    "bench": "esbuild bench/bench.tsx --bundle --jsx=automatic --minify --define:process.env.NODE_ENV='\"production\"' --outfile=bench/bench.js --log-level=warning && node bench/run.cjs",
+    "check": "npm run typecheck && npm run lint && npm run coverage && npm run memcheck"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@tanstack/react-virtual": "3.10.8",
+    "@testing-library/dom": "10.4.0",
+    "@testing-library/react": "16.1.0",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "@vitest/coverage-v8": "2.1.9",
+    "esbuild": "0.21.5",
+    "eslint": "9.13.0",
+    "eslint-plugin-react-hooks": "5.0.0",
+    "fast-check": "3.22.0",
+    "jsdom": "25.0.1",
+    "playwright": "1.63.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "typescript": "5.6.3",
+    "typescript-eslint": "8.11.0",
+    "vitest": "2.1.9"
+  }
+}
