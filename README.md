@@ -130,4 +130,8 @@ npx playwright install chromium && npm run bench   # browser benchmark
 npm run microbench
 ```
 
+## Engineering evidence
+
+This repository demonstrates bounded-memory event ingestion, React snapshot consistency, virtualized reads, property-based testing, browser benchmarks and accessibility-conscious integration patterns. The reusable delivery standards are documented in [software-engineering-handbook](https://github.com/shreyasheoran/software-engineering-handbook).
+
 MIT licensed.
